@@ -50,7 +50,16 @@ function showOutput() {
   // Show the encrypted text in the text area
   let showResult = document.querySelector('.result-box');
 
-  showResult.value = encrypted;
+  // Verify if user is targeting encrypt or decrypt button and send the right answer
+  document.addEventListener('click', (e) => {
+    let btnTarget = e.target;
+
+    if (btnTarget.classList.contains('encrypt')) {
+      showResult.value = encrypted;
+    } else if (btnTarget.classList.contains('decrypt')) {
+      showResult.value = decrypted;
+    }
+  });
 }
 
 // Function to clean the output area in case there is already some encrypted text
