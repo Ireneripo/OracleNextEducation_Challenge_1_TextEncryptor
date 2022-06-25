@@ -19,7 +19,9 @@
 
     <main>
       <section class="input-area">
-        <textarea name="textarea" id="" " class="input-space" placeholder="Insert text here"></textarea>
+        <textarea name="textarea" class="input-space" placeholder="Insert text here"></textarea>
+
+        <!-- <input type="text" id="input-value" class="input-space" placeholder="Insert text here" /> -->
 
         <div class="alert-area">
           <img src="../images/Vector.png" alt="alert-icon" class="alert-icon" />
@@ -27,14 +29,14 @@
         </div>
 
         <div class="my-button-container">
-          <button class="encrypt my-button">Encrypt</button>
-          <button class="decrypt my-button">Decrypt</button>
+          <button class="encrypt my-button" id="encryptBtn">Encrypt</button>
+          <button class="decrypt my-button" id="decryptBtn">Decrypt</button>
         </div>
       </section>
 
       <section class="result-box">
         <figure>
-          <img src="../images/Muñeco.png" alt="Image of a boy with a magnifying glass and a diamond" class="boy-image"/>
+          <img src="../images/Muñeco.png" alt="Image of a boy with a magnifying glass and a diamond" class="boy-image" />
           <figcaption>No message found</figcaption>
           <p>Please, insert the text you want to encypt or decrypt</p>
           <button class="copy my-button">Copy</button>
