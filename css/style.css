@@ -78,12 +78,13 @@ figure figcaption {
 }
 
 .result-box {
-  width: 100%;
+  width: 92%;
   background-color: #ffffff;
   text-align: center;
   color: #0a3871;
   font-size: 2.5em;
   font-family: 'Inter', sans-serif;
+  resize: none;
   border: none;
   padding-bottom: 120%;
 }
