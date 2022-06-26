@@ -168,16 +168,16 @@ figcaption p:nth-child(2) {
   .output-area {
     height: 125px;
   }
-}
 
-.my-button-container {
-  flex-wrap: wrap;
-}
+  .my-button-container {
+    flex-wrap: wrap;
+  }
 
-.encrypt {
-  width: 90%;
-}
+  .encrypt {
+    width: 90%;
+  }
 
-.decrypt {
-  width: 90%;
+  .decrypt {
+    width: 90%;
+  }
 }
