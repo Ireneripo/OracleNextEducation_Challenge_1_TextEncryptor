@@ -13,10 +13,10 @@ function decrypt(inputValue) {
     copyBtn.style.visibility = 'hidden';
   } else {
     // Transform the text to lowercase
-    let textToDencrypt = inputValue.toLowerCase();
+    let textToDecrypt = inputValue.toLowerCase();
 
     // Decrypt the text
-    decrypted = textToDencrypt.replaceAll('enter', 'e').replaceAll('imes', 'i').replaceAll('ai', 'a').replaceAll('ober', 'o').replaceAll('ufat', 'u');
+    decrypted = textToDecrypt.replaceAll('enter', 'e').replaceAll('imes', 'i').replaceAll('ai', 'a').replaceAll('ober', 'o').replaceAll('ufat', 'u');
 
     // Clean input space
     document.querySelector('.input-space').value = '';
