@@ -169,3 +169,15 @@ figcaption p:nth-child(2) {
     height: 125px;
   }
 }
+
+.my-button-container {
+  flex-wrap: wrap;
+}
+
+.encrypt {
+  width: 90%;
+}
+
+.decrypt {
+  width: 90%;
+}
