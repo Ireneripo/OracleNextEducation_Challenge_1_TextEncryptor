@@ -1,6 +1,6 @@
 Challenge Oracle ONE - Lógica de programación - Encriptador de texto
 
-Creación de una plicación que encripta textos.
+Creación de una aplicación que encripta textos.
 
 Las "llaves" de encriptación que utilizaremos son las siguientes:
 
@@ -21,6 +21,6 @@ Por ejemplo: `"gato" => "gaitober"` `gaitober" => "gato"`
 
 - Un botón que copie el texto encriptado/desencriptado para la sección de transferencia, o sea que tenga la misma funcionalidad del `ctrl+C` o de la opción "copiar" del menú de las aplicaciones.
 
-Test the app [here] https://ireneripo.github.io/OracleNextEducation_Challenge_1_TextEncryptor/index.html
+Test the app here https://ireneripo.github.io/OracleNextEducation_Challenge_1_TextEncryptor/index.html
 
 #challengeonecodificador2
