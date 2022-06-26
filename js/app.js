@@ -18,18 +18,20 @@ function encrypt(inputValue) {
   // Get the text entered by the user
   inputValue = document.querySelector('.input-space').value;
 
+  // Verify if the user entered a text
   if (inputValue.length === 0) {
-    alert('Debe ingresar un texto');
+    alert('Please insert text');
     let figureArea = document.getElementById('figure');
     figureArea.style.visibility = 'visible';
+
+    let copyBtn = document.querySelector('.copy');
+    copyBtn.style.visibility = 'hidden';
   } else {
     // Transform the text to lowercase
     let textToEncrypt = inputValue.toLowerCase();
 
     // Encrypt the text
     encrypted = textToEncrypt.replaceAll('e', 'enter').replaceAll('i', 'imes').replaceAll('a', 'ai').replaceAll('o', 'ober').replaceAll('u', 'ufat');
-
-    //   let encrypted = textToEncrypt.replaceAll('a', 'ai').replaceAll('e', 'enter').replaceAll('i', 'imes').replaceAll('o', 'ober').replaceAll('u', 'ufat');
 
     // Clean input space
     document.querySelector('.input-space').value = '';
@@ -45,15 +47,17 @@ function encrypt(inputValue) {
 function showOutput() {
   // Clean the the image and its caption
   let figureArea = document.getElementById('figure');
-  figureArea.style.visibility = 'hidden';
+  figureArea.style.display = 'none';
 
-  // Create and style a text area where we will show the encrypted text
+  // Create a text area where we will show the encrypted text
   let resultArea = document.getElementById('result-box');
   resultArea.insertAdjacentHTML('afterbegin', '<textarea autofocus class="result-box"></textarea>');
 
-  resultArea.style.padding = '2% 0 2% 0';
+  // Make the copy button visible again (it was hidden on page loading)
+  let copyBtn = document.querySelector('.copy');
+  copyBtn.style.visibility = 'visible';
 
-  // Show the encrypted text in the text area
+  // Select element to show the encrypted text in the text area
   let showResult = document.querySelector('.result-box');
 
   // Verify if user is targeting encrypt or decrypt button and send the right answer
@@ -81,10 +85,14 @@ function decrypt(inputValue) {
   // Get the text entered by the user
   inputValue = document.querySelector('.input-space').value;
 
+  // Verify if the user entered a text
   if (inputValue.length === 0) {
-    alert('Debe ingresar un texto');
+    alert('Please insert text');
     let figureArea = document.getElementById('figure');
     figureArea.style.visibility = 'visible';
+
+    let copyBtn = document.querySelector('.copy');
+    copyBtn.style.visibility = 'hidden';
   } else {
     // Transform the text to lowercase
     let textToDencrypt = inputValue.toLowerCase();
@@ -103,9 +111,13 @@ function decrypt(inputValue) {
 }
 
 // Function to copy the result of encryption/decryption
+// Call the function
 copyResult();
 function copyResult() {
+  // Find target button
   let copyBtn = document.querySelector('.copy');
+
+  // Listen the click event and copy/paste text
   copyBtn.addEventListener('click', () => {
     let textToCopy = document.querySelector('.result-box').value;
     navigator.clipboard.writeText(textToCopy);
