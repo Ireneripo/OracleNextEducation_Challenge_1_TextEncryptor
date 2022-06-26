@@ -32,10 +32,6 @@ main {
   outline: 0;
 }
 
-/* .input-space:focus {
-  outline: 0;
-} */
-
 .input-space::placeholder {
   color: #0a3871;
 }
@@ -61,6 +57,7 @@ main {
   background-color: #ffffff;
   text-align: center;
   padding: 16% 0 2% 0;
+  margin-top: 15%;
   border-radius: 32px;
   box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
 }
@@ -70,12 +67,12 @@ figure .boy-image {
   width: 100%;
 }
 
-figure p {
-  text-align: center;
+figcaption p:nth-child(1) {
+  font-weight: bolder;
 }
 
-figure figcaption {
-  text-align: center;
+figcaption p:nth-child(2) {
+  margin-bottom: 80px;
 }
 
 .result-box {
@@ -83,7 +80,7 @@ figure figcaption {
   background-color: #ffffff;
   text-align: center;
   color: #0a3871;
-  font-size: 2.5em;
+  font-size: 2em;
   font-family: 'Inter', sans-serif;
   resize: none;
   border: none;
@@ -92,13 +89,14 @@ figure figcaption {
 
 .my-button-container {
   display: flex;
+  justify-content: space-evenly;
   gap: 25px;
   padding: 0.8em 0;
 }
 
 .my-button {
   padding: 1.45em;
-  width: 100%;
+  width: 90%;
   border-radius: 24px;
   border: 1px solid #0a3871;
 }
@@ -106,11 +104,13 @@ figure figcaption {
 .encrypt {
   background-color: #0a3871;
   color: #ffffff;
+  width: 40%;
 }
 
 .decrypt {
   background-color: #d8dfe8;
   color: #0a3871;
+  width: 40%;
 }
 
 .copy {
