@@ -20,7 +20,8 @@ function encrypt(inputValue) {
 
   if (inputValue.length === 0) {
     alert('Debe ingresar un texto');
-    return;
+    let figureArea = document.getElementById('figure');
+    figureArea.style.visibility = 'visible';
   } else {
     // Transform the text to lowercase
     let textToEncrypt = inputValue.toLowerCase();
@@ -44,7 +45,7 @@ function encrypt(inputValue) {
 function showOutput() {
   // Clean the the image and its caption
   let figureArea = document.getElementById('figure');
-  figureArea.style.display = 'none';
+  figureArea.style.visibility = 'hidden';
 
   // Create and style a text area where we will show the encrypted text
   let resultArea = document.getElementById('result-box');
@@ -82,7 +83,8 @@ function decrypt(inputValue) {
 
   if (inputValue.length === 0) {
     alert('Debe ingresar un texto');
-    return;
+    let figureArea = document.getElementById('figure');
+    figureArea.style.visibility = 'visible';
   } else {
     // Transform the text to lowercase
     let textToDencrypt = inputValue.toLowerCase();
