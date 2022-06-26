@@ -103,9 +103,10 @@ function decrypt(inputValue) {
 // Function to copy the result of encryption/decryption
 copyResult();
 function copyResult() {
-  let targetBtn = document.querySelector('.copy');
-  targetBtn.addEventListener('click', () => {
+  let copyBtn = document.querySelector('.copy');
+  copyBtn.addEventListener('click', () => {
     let textToCopy = document.querySelector('.result-box').value;
     navigator.clipboard.writeText(textToCopy);
+    navigator.clipboard.readText().then((textToCopy) => (document.querySelector('.input-space').value = textToCopy));
   });
 }
