@@ -1,4 +1,4 @@
-Challenge Oracle ONE - Lógica de programación - Encriptador de texto
+# OracleNextEducation_Challenge_1_TextEncryptor
 
 Creación de una aplicación que encripta textos.
 
@@ -24,3 +24,4 @@ Por ejemplo: `"gato" => "gaitober"` `gaitober" => "gato"`
 Test the app here https://ireneripo.github.io/OracleNextEducation_Challenge_1_TextEncryptor/index.html
 
 #challengeonecodificador2
+
